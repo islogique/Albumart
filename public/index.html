@@ -1,74 +1,105 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albumart</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="text-gray-600 font-body"> 
-    <div> <!-- content wrapper -->
-       <div>
-           <nav> <!--Nav-->
-               <div>
-                   <h1 class="font-bold border-b border-gray-100">
-                       <a href="#">Albumart</a>
-                   </h1>
-               </div>
-               <ul>
-                   <li class="text-gray-700 font-bold">
-                       <a href="#">
-                           <span>Home</span>
-                       </a>
-                   </li>
-                   <li>
-                       <a href="#">
-                           <span>About</span>
-                       </a>
-                   </li>
-                   <li>
-                       <a href="#">
-                           <span>Contact</span>
-                       </a>
-                   </li>
-               </ul>
-           </nav>
-       </div> <!-- end nav-->
 
-       <main class="px-16 py-6">
-           <div class="flex justify-end">
-               <a href="#"class="text-primary">log in</a>
-               <a href="#"class="text-primary ml-2">Sign up</a>
-           </div>
+<body class="text-gray-600 font-body">
+    <div class="grid md:grid-cols-3">
+        <!-- content wrapper -->
+        <div>
+            <nav class="md:col-span-1">
+                <!--Nav-->
+                <div>
+                    <h1 class="font-bold border-b border-gray-100">
+                        <a href="#">Albumart</a>
+                    </h1>
+                </div>
+                <ul>
+                    <li class="text-gray-700 font-bold">
+                        <a href="#">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- end nav-->
 
-           <header class="font-semibold">
-               <h2 class="text-gray-700 text-6xl">Albumarts</h2>
-               <h3 class="text-2xl">For your favorite artist</h3>
-           </header>
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="text-primary btn border-primary md:border-2">log in</a>
+                <a href="#" class="text-primary ml-2 btn border-primary md:border-2">Sign up</a>
+            </div>
 
-           <div>
-               <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Albums</h4>
-               <div class="mt-8">
-                   <!-- cards goes here -->
-                   <div>
-                       <img src="img/128902.jpg" alt="">
-                       <div>
-                           <span>J.cole</span>
-                           <span>Album art by logique</span>
-                       </div>
-                   </div>
-               </div>
+            <header class="font-semibold">
+                <h2 class="text-gray-700 text-6xl">Albumarts</h2>
+                <h3 class="text-2xl">For your favorite artist</h3>
+            </header>
 
-               <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular albums</h4>
-               <div class="mt-8">
-                   <!-- card goes here -->
-               </div>
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Albums</h4>
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                    <!-- cards goes here -->
+                    <div class="card">
+                        <img src="img/128902.jpg" alt="j-cole" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">J.cole</span>
+                            <span class="block text-gray-500 text-sm">Album art by logique</span>
+                        </div>
+                        <div class="badge">
+                            <span>latest</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/gettyimages-1052258742-2048x2048.jpg" alt="6lack"
+                            class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">6lack</span>
+                            <span class="block text-gray-500 text-sm">Album art by logique</span>
+                        </div>
+                        <div class="badge">
+                            <span>latest</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/gettyimages-864810240-2048x2048.jpg" alt="khalid"
+                            class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Khalid</span>
+                            <span class="block text-gray-500 text-sm">Album art by logique</span>
+                        </div>
+                        <div class="badge">
+                            <span>latest</span>
+                        </div>
+                    </div>
 
-               <div class="flex justify-center">
-                   <div class="bg-secondary-100 text-secondary-200">load more</div>
-               </div>
-               
-           </div>
-       </main>
+                </div>
+
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular albums</h4>
+                <div class="mt-8">
+                    <!-- card goes here -->
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="bg-secondary-100 text-secondary-200 btn">load more</div>
+                </div>
+
+            </div>
+        </main>
     </div>
 </body>
+
 </html>
